@@ -33,7 +33,7 @@ span {
   margin-left: 16px;
   margin-right: 16px;
   border-radius: 4px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 button {
   font-size: 3rem;
