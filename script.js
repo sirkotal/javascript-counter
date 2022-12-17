@@ -1,13 +1,20 @@
-let my_alpha
-let my_string = "Hello World!"
-let my_number = 42
-let my_array = [11, "Hello", "42", "World"]
-let my_boolean = true;
+let add = document.querySelector("#add");
+let subract = document.querySelector("#subtract");
 
-let my_class = {
-    name: "Mr. Gus",
-    goal: "Learn JavaScript",
-    age: 20,
-}
+add.addEventListener("click", function () {
+  let output = document.querySelector("#output");
+  let result = Number(output.innerText) + 1;
 
-let my_button = document.querySelector("#id") // reference to HTML variable
+  output.innerText = result;
+});
+
+subract.addEventListener("click", function () {
+    let output = document.querySelector("#output");
+    let result = Number(output.innerText) - 1;
+  
+    if (result < 0) {
+      result = 0;
+    }
+  
+    output.innerText = result;
+  });
